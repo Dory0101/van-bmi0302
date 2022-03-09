@@ -4,7 +4,7 @@
     <string name="ok">OK</string>
     <string name="please_enter_a_number_1_10">Please enter a number(1-10)</string>
     <string name="button_guess">Guess</string>
-    <string name="counter_zero">0</string>
+    <string name="counter_zero">0 Time</string>
     <string name="counter_times"> %1$d Times</string>
     <string name="smaller">Smaller</string>
     <string name="bigger">Bigger</string>
