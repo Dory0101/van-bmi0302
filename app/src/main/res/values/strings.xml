@@ -10,4 +10,6 @@
     <string name="bigger">Bigger</string>
     <string name="bingo">Bingo</string>
     <string name="something_go_wrong">Something go wrong</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
