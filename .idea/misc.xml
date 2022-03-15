@@ -5,7 +5,11 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fatgment_blank.xml" value="0.2368659420289855" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.2368659420289855" />
+        <entry key="app/src/main/res/layout/fragment_bmi.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_empty.xml" value="0.2368659420289855" />
+        <entry key="app/src/main/res/layout/fragment_guess.xml" value="0.11955420466058764" />
+        <entry key="app/src/main/res/menu/menu_nav.xml" value="0.24583333333333332" />
       </map>
     </option>
   </component>
