@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
                 else -> true
             }
         }
+
+        //add transaction record into db
         val t1 = Transaction(1, "hank", "20220315", 3000, 1)
         val database = Room.databaseBuilder(this,
             TranDatabase::class.java, "trans.db")
@@ -60,7 +62,13 @@ class MainActivity : AppCompatActivity() {
 //        val transaction = supportFragmentManager.beginTransaction()
 //        transaction.add(R.id.my_container, guess1to10Fragment)  //.replace() remove last one add new fragment
 //        transaction.commit()
-        
+
+        val p = Person("Hank", 66.5f, 1.7f)
+        val bundle = Bundle().apply {
+            putString("NAME","Hank")
+            putParcelable("PERSON", p)
+        }
+        fragements[0].arguments = bundle
         //kotlin way
         supportFragmentManager.beginTransaction().run {
             add(R.id.my_container, fragements[0])
@@ -68,5 +76,8 @@ class MainActivity : AppCompatActivity() {
             //run{} after run, gone.
             //apply{} after apply, can get things.
         }
+    }
+    fun changeFragment(num: Int) {
+
     }
 }

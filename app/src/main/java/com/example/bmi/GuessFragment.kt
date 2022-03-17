@@ -1,6 +1,7 @@
 package com.example.bmi
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +27,12 @@ class GuessFragment :Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState) //call father class method
+
+        val name = arguments?.getString("NAME")
+        Log.d(MainActivity::class.java.simpleName, "onViewCreated: NAME: $name")
+        val person = arguments?.getParcelable<Person>("PERSON")
+        Log.d(MainActivity::class.java.simpleName, "onViewCreated: person ${person?.weight}")
+
         bindining.button.setOnClickListener {
             val num = bindining.number.text.toString().toInt()
             viewModel.guess(num)
